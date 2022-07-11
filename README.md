@@ -8,15 +8,20 @@ Sms Tracker is phone finding which help you to find even if its offline by sendi
 <li>Send location to sender(Works only when location is ON)</li>
 <li>Change Lock Screen wallpaper with helping message</li>
 </ul>
+<h3>Requirement</h3>
+
+Android 6.0+
+
+<h3>Screenshots</h3>
 <p>
 <img src="/outputs/Screenshot_3.jpg" height="430px" />&nbsp;&nbsp;
 <img src="/outputs/Screenshot_4.jpg" height="430px" />&nbsp;&nbsp;
 <img src="/outputs/Screenshot_5.jpg" height="430px" />&nbsp;&nbsp;
-<img src="/outputs/Screenshot_2.jpg" height="430px" />&nbsp;&nbsp;
+<img src="/outputs/Screenshot_2.jpg" height="430px" />&nbsp;&nbsp;</br></br>
+<img src="/outputs/Screenshot_6.jpg" height="430px" />&nbsp;&nbsp;
+<img src="/outputs/Screenshot_7.jpg" height="430px" />&nbsp;&nbsp;
 </p>
 
-<h3>Requirement</h3>
 
-Android 6.0+
 
 
