@@ -87,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
 
-                    android:maxLength="15" />
+                    android:maxLength="20" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.switchmaterial.SwitchMaterial

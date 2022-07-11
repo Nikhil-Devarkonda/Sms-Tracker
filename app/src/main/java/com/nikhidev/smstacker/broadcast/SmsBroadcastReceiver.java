@@ -133,14 +133,15 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
                     Log.i(TAG, "checkForLocation: onProviderDisabled");
                 }
             };
-
             locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 10, locationListener);
-        }else if(findMyPhoneModel.getEnabled(FindMyPhoneModel.WALLPAPER)){
+
+        }
+        if(findMyPhoneModel.getEnabled(FindMyPhoneModel.WALLPAPER)){
             WallpaperManager manager = WallpaperManager.getInstance(context);
             File mSaveBit = Storage.getWallpaperFile();
             String filePath = mSaveBit.getPath();
             Bitmap bitmap = BitmapFactory.decodeFile(filePath);
-
+            Toast.makeText(context, "Wallpaper changed", Toast.LENGTH_LONG).show();
             try {
                 manager.setBitmap(bitmap);
             } catch (IOException e) {

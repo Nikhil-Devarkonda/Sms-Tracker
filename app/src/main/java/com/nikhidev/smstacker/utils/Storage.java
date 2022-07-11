@@ -72,15 +72,15 @@ public class Storage {
             JSONObject s1 = new JSONObject();
             s1.put("enabled", false);
             s1.put("name", "SILENT");
-            s1.put("command","smstracker#silent");
+            s1.put("command","sms#silent");
             JSONObject s2 = new JSONObject();
             s2.put("enabled", false);
             s2.put("name", "VOLUME");
-            s2.put("command","smstracker#volume");
+            s2.put("command","sms#volume");
             JSONObject s3 = new JSONObject();
             s3.put("enabled", false);
             s3.put("name", "VIBRATE");
-            s3.put("command","smstracker#vibrate");
+            s3.put("command","sms#vibrate");
             sounds.put("SILENT",s1);
             sounds.put("VOLUME",s2);
             sounds.put("VIBRATE",s3);
@@ -97,7 +97,7 @@ public class Storage {
             f2.put("name", "WALLPAPER");
             f2.put("message", "This mobile is lost by\nowner\nPlease call\n{}\n to return it");
             JSONObject findPhone = new JSONObject();
-            findPhone.put("command","smstracker#find_phone");
+            findPhone.put("command","sms#find_phone");
             findPhone.put("LOCATION",f1);
             findPhone.put("WALLPAPER",f2);
             root.put(FINDPHONEKEY,findPhone);

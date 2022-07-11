@@ -28,6 +28,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.nikhidev.smstacker.R;
 import com.nikhidev.smstacker.SetWallpaperActivity;
 import com.nikhidev.smstacker.databinding.FragmentHomeBinding;
+import com.nikhidev.smstacker.utils.Storage;
 
 public class HomeFragment extends Fragment {
 
@@ -245,6 +246,7 @@ public class HomeFragment extends Fragment {
         });
         // Data to View init
         switchLocation.setChecked(findMyPhoneModel.getEnabled(FindMyPhoneModel.LOCATION));
+        switchWallpaper.setChecked(findMyPhoneModel.getEnabled(FindMyPhoneModel.WALLPAPER));
         editTextFindPhone.setText(findMyPhoneModel.getCommand());
 
         // Events :
@@ -287,8 +289,13 @@ public class HomeFragment extends Fragment {
                         }
                         checkVal = getContext().checkCallingOrSelfPermission(Manifest.permission.SET_WALLPAPER);
                         if(checkVal != PackageManager.PERMISSION_GRANTED){
-                            switchWallpaper.setChecked(false);
+
                             getWallpaperPermission(checkVal);
+                            return;
+                        }
+                        if(!Storage.getWallpaperFile().exists()){
+                            Toast.makeText(getActivity(), "Please set wallpaper first", Toast.LENGTH_SHORT).show();
+                            switchWallpaper.setChecked(false);
                             return;
                         }
                     }
@@ -370,6 +377,10 @@ public class HomeFragment extends Fragment {
         }
 
         int GRANTED = PackageManager.PERMISSION_GRANTED;
+
+        if(c1==GRANTED && c2 == GRANTED && c3 == GRANTED){
+            return true;
+        }
 
 
 
