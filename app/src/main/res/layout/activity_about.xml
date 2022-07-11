@@ -1,9 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutActivity">
+    tools:context=".AboutActivity"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sms"
+            android:layout_marginVertical="15dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.1"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_text"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How it works?"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_working"
+            android:lineHeight="25dp"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Features"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_feature"
+            android:lineHeight="25dp"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            />
+
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For any queries contact"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nikhildev0076@gmail.com"
+            android:lineHeight="25dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

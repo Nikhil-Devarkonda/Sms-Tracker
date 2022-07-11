@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sms Tacker</string>
+    <string name="app_name">Sms Tracker</string>
     <string name="title_activity_main_home">MainActivityHome</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -17,7 +17,7 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_wallpaper_preview">WallpaperPreviewActivity</string>
-    <string name="about_text">\t\t\t\tSms Tracker is mobile finding which help you to find even if its offline by sending sms to the lost mobile.App can reply back to sender vai sms.</string>
-
-    <string name="about_feature">\u2022 Switch from silent/vibrate mode to ringing mode\n\u2022 Send location to sender(Works only when location is ON)\n\u2022  Change Lock Screen wallpaper with helping message</string>
+    <string name="about_text">\t\t\t\tSms Tracker is mobile finding app which help you to find even if its offline by sending sms to the lost mobile.App can reply back to sender vai sms.</string>
+    <string name="about_feature">\u2022 Switch between silent, vibrate, ringing mode.\n\u2022 Send location to sender(Works only when location is ON)\n\u2022  Change Lock Screen wallpaper with helping message</string>
+    <string name="about_working">Users have to set the command for each function and enable the switch by granting necessary permission. In case of phone lost, user can send SMS with the same command to the lost phone to active that function.</string>
 </resources>
