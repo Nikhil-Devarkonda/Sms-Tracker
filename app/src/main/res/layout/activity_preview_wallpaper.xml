@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/screen_lay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123"
+
+    tools:context=".PreviewWallpaperActivity"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#123"
+        android:gravity="center"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your message"
+            android:keepScreenOn="true"
+            android:textColor="#fff"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

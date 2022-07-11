@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Sms Tacker</string>
+    <string name="title_activity_main_home">MainActivityHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="About">About</string>
+    <string name="Help">help</string>
+    <string name="title_activity_preview_wallpaper">PreviewWallpaperActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_wallpaper_preview">WallpaperPreviewActivity</string>
+    <string name="about_text">\t\t\t\tSms Tracker is mobile finding which help you to find even if its offline by sending sms to the lost mobile.App can reply back to sender vai sms.</string>
+
+    <string name="about_feature">\u2022 Switch from silent/vibrate mode to ringing mode\n\u2022 Send location to sender(Works only when location is ON)\n\u2022  Change Lock Screen wallpaper with helping message</string>
+</resources>

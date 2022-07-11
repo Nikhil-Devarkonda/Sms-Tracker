@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetWallpaperActivity"
+    android:orientation="vertical">
+<!--    android:gravity="center">-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter message for lock screen..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Your message"
+
+            android:lines="3"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/screen_lay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#123"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/set_wall_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your mesasge"
+            android:textColor="#fff"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="1"
+            android:id="@+id/set_wall_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set"
+
+            android:layout_marginRight="10dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="1"
+            android:id="@+id/preview_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preview"
+             />
+
+    </LinearLayout>
+</LinearLayout>
