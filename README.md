@@ -1,4 +1,4 @@
-# Sms Tacker : Find your phone by SMS
+# Sms Tracker : Find your phone by SMS
 Sms Tracker is phone finding which help you to find even if its offline by sending sms to the lost phone. App can reply back to sender vai sms.
 <h3>Features</h3>
 <ul>
